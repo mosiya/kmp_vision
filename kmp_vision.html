@@ -259,7 +259,8 @@
                 container.setPatternArrayValue(0, '0');
                 able();
             } else {
-                disable()
+                disable();
+                result.innerText = value.length < 1 ? '请输入source字符串~不然就是一片空白哟' : 'source长度必须大于pattern才可以开始~';
             }
         }
 
