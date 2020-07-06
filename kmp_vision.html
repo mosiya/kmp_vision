@@ -257,9 +257,9 @@
                 container.setPatternDiv(0, patternInputValue);
                 container.setPatternArray(0, patternInputValue.replace(/./g, ' '));
                 container.setPatternArrayValue(0, '0');
-                long();
+                able();
             } else {
-                shorter()
+                disable()
             }
         }
 
@@ -268,6 +268,8 @@
                 result.innerText = 'pattern字符串长度超过source长度';
                 patternInput.value = patternInputValue;
                 return;
+            } else {
+                able();
             }
             result.innerText = '';
             // reset sourceIndex
@@ -311,12 +313,12 @@
             autoButton.disabled = '';
         }
 
-        function shorter() {
+        function disable() {
             startButton.disabled = true;
             autoButton.disabled = true;
         }
 
-        function long() {
+        function able() {
             startButton.disabled = '';
             autoButton.disabled = '';
         }
